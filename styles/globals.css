@@ -2,8 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-height: 101vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {

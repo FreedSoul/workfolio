@@ -1,12 +1,9 @@
-
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      
-
       <main className={styles.main}>
         <h1 className={styles.title}>Mateo Garcia Arias</h1>
 
@@ -18,8 +15,8 @@ export default function Home() {
             width={'300px'}
             height={'300px'}
             layout={'fill'}
-            alt='hola mundo'
-          ></Image>
+            alt="hola mundo"
+          />
           <div className={styles['circle-matt']}></div>
         </div>
 
@@ -69,5 +66,5 @@ export default function Home() {
         </div> */}
       </main>
     </div>
-  );
+  )
 }

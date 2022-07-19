@@ -11,14 +11,14 @@ export default function Home() {
 
         <div className={styles['container-matt']}>
           <Image
-            src={'/mateo-sentado-sinfondo'}
-            width={'300px'}
-            height={'300px'}
+            src={'/sentado-sinfondo.png'}
+            // width={'300px'}
+            // height={'300px'}
             layout={'fill'}
             alt="hola mundo"
           />
-          <div className={styles['circle-matt']}></div>
         </div>
+          <div className={styles['circle-matt']}></div>
 
         <div className={styles['circle-dev']}></div>
         {/* <div className={styles.card}>

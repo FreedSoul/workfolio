@@ -14,6 +14,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"/>
       </Head>
       <body>
         <Main />

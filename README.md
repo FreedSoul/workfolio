@@ -8,6 +8,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Errors Advice
+## Errors Advice & other advices
 
 [failed to load swc binary](https://stackoverflow.com/questions/69816589/next-failed-to-load-swc-binary)
+Cmd + 0 (zero) to set focus on the file tree
+
+## guides applied
+
+[for design tokens i use](https://www.smashingmagazine.com/2021/07/global-local-styling-nextjs/)

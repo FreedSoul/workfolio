@@ -1,0 +1,40 @@
+.navbar-wrapper{
+  /* display: flex; */
+  z-index: 99;
+  /* position: fixed; */
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  grid-column: 5/6;
+  grid-row: 2/2;
+}
+
+.navbar{
+  z-index: 99;
+  /* position: absolute; */
+  /* margin-left: auto;
+  margin-right: auto;
+  top: 00px;
+  left: 0;
+  right: 0; */
+  /* margin-top: 18rem; */
+  /* display: flex; */
+  /* align-self: center; */
+  /* margin-left: 35rem; */
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar ul a{
+  color: aliceblue;
+  font-family: 'Patrick Hand SC';
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 600px) {
+  .navbar-wrapper{
+    grid-column: 4/ 6;
+  }
+}

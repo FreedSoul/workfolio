@@ -1,0 +1,85 @@
+.main {
+  height: 100vh;
+  background: url('../public/paisaje-neon.png');
+  background-position: center;
+  /* padding: 20px; */
+  /* background-size: contain; */
+  /* background-size: 800px 600px; */
+  background: cover no-repeat fixed;
+  /* width: 99vw; */
+  display: grid;
+  grid-template-columns: repeat(4, 10%) 2fr repeat(4, 10%);
+  grid-template-rows: 400px 300px 200px;
+  /* flex: 1; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left; */
+  background-color: #6200ff;
+  font-family: 'major-mono-display';
+  font-weight: lighter;
+  z-index: -100;
+}
+
+.top-circle {
+  position: absolute;
+  top: -500px;
+  /* left: -200px; */
+  width: 800px;
+  height: 800px;
+  background: blue;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 500px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    #e5c72d 35.27%,
+    rgba(45, 229, 96, 0.78) 100%
+  );
+  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+}
+
+.top-circle-wrapper {
+  position: relative;
+  width: 800px;
+  /* align-self: center; */
+  justify-self: center;
+  grid-column: 3 / 8;
+  grid-row: 1/2;
+}
+
+.bot-circle {
+  justify-self: center;
+  grid-column: 3 / 8;
+  grid-row: 3/4;
+  /* position: absolute; */
+  /* top: 500px; */
+  /* left: 400px; */
+  width: 600px;
+  height: 600px;
+  background: blue;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 500px;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    #e5c72d 35.27%,
+    rgba(45, 229, 96, 0.78) 100%
+  );
+  transform: rotate(180deg);
+  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .top-circle-wrapper {
+    /* grid-column: 1 / span 6; */
+    grid-row: 1/2;
+  }
+
+  .bot-circle {
+    /* grid-column: 1 / span 6; */
+    grid-row: 3/5;
+  }
+}

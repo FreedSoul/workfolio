@@ -80,6 +80,8 @@
 
   .bot-circle {
     /* grid-column: 1 / span 6; */
-    grid-row: 3/5;
+    grid-row: 6/7;
+    width: 400px;
+    height: 400px;
   }
 }

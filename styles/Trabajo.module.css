@@ -1,0 +1,28 @@
+.area {
+  z-index: 99;
+  display: flex;
+  position: relative;
+  width: 1224px;
+  height: 783px;
+  justify-self: center;
+  width: 100%;
+  grid-column: 2 / span 7;
+  margin-top: 50px;
+  grid-row: 1/4;
+  /* left: 119px; */
+  /* top: 191px; */
+
+  background: linear-gradient(
+    180deg,
+    rgba(229, 199, 45, 0.52) 35.27%,
+    rgba(45, 229, 96, 0.78) 100%
+  );
+  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .area {
+    height: 1283px;
+  }
+}

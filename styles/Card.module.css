@@ -1,0 +1,38 @@
+
+.card {
+  display: flex;
+  z-index: 3;
+  position: relative;
+  width: 30vw;
+  min-width: 400px;
+  height: 250px;
+  margin: 10px;
+  /* left: 200px;
+  top: 100px; */
+
+  background: linear-gradient(
+    180deg,
+    rgba(243, 219, 0, 0.7) 26.98%,
+    rgba(63, 0, 243, 0.7) 100%
+  );
+  border-radius: 15px;
+}
+
+.card-image{
+  position: relative;
+  border-radius: 15px 0px 0px 15px;
+  min-width: 60%;
+  height: 100%;
+}
+
+.card-description{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 1vw; */
+  /* padding: 20px; */
+}
+
+.card-description-title{
+  font-size: 0.8rem;
+  margin: 5px;
+}

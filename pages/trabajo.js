@@ -1,9 +1,33 @@
 // import styles from '../styles/Home.module.css'
-// import styles from '../styles/Home.module.css'
+import styles from '../styles/Trabajo.module.css'
+import Card from '../components/card'
 
 export default function Trabajo() {
+  const myWorkList = [
+    {
+      title: 'static website',
+      listTechs: ['next', 'css', 'react'],
+      image: '/paisaje-neon.png',
+      imageDescription: 'static website',
+    },
+    {
+      title: 'to do list',
+      listTechs: ['vite', 'vitest', 'tailwind'],
+      image: '/paisaje-neon.png',
+      imageDescription: 'to do list',
+    },
+    {
+      title: 'snake game',
+      listTechs: ['javascript', 'node', 'css'],
+      image: '/paisaje-neon.png',
+      imageDescription: 'snake game',
+    },
+  ]
   return (
     <>
+      <div className={styles['page-container']}>
+          <h2 className={styles['page-title']}>My Work</h2>
+      </div>
       {/* <div className={styles.card}>
           <div className="tk-blob">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
@@ -19,7 +43,21 @@ export default function Trabajo() {
             </svg>
           </div>
         </div> */}
-      hola Trabajo
+      <div className={styles.area}>
+        {/* <div className={styles['card-container1']}> */}
+        {myWorkList.map(item => <Card title={item.title} list={item.listTechs} image={item.image} key={item.title} alt={item.imageDescription}>{item}</Card>)}
+        {/* <Card title={'pagina web estatica'} list={milista} /> */}
+        {/* </div> */}
+        {/* <div className={styles['card-container2']}> */}
+        {/* <Card /> */}
+        {/* </div> */}
+        {/* <div className={styles['card-container3']}> */}
+        {/* <Card /> */}
+        {/* </div> */}
+        {/* <div className={styles['card-container4']}> */}
+        {/* <Card /> */}
+        {/* </div> */}
+      </div>
     </>
   )
 }

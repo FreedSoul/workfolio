@@ -2,14 +2,12 @@
   /* padding: 0 0rem; */
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  /* height: 10vh; */
   grid-column: 1/span 10;
   grid-row: 1/2;
   align-items: center;
   /* width: 100vw; */
 }
-
-
 
 /* .title {
   font-family: 'Rock Salt', cursive;
@@ -33,25 +31,50 @@
   width: 300px;
 }
 
+.top-circle {
+  position: absolute;
+  top: -500px;
+  /* left: -200px; */
+  width: 800px;
+  height: 800px;
+  background: blue;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 500px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    #e5c72d 35.27%,
+    rgba(45, 229, 96, 0.9) 100%
+  );
+  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+}
+
+.top-circle-wrapper {
+  position: relative;
+  width: 800px;
+  /* align-self: center; */
+  justify-self: center;
+  grid-column: 3 / 8;
+  grid-row: 1/2;
+}
+
 .container-title{
   /* color: aqua; */
   color: aliceblue;
 }
 
-.description {
-  /* margin: 4rem 0; */
-  line-height: 1;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .container-description {
+  text-align: center;
+  font-family: 'Rock Salt';
+  font-size: 1rem;
+  line-height: 1;  
   background-color: antiquewhite;
-  position: absolute;
-  width: 580px;
-  max-width: calc(100% - 10px);
-  height: 60px;
-  top: 140px;
+  position: relative;
+  width: 30vw;
+  right: 50px;
+  /* height: 60px; */
+  /* top: 140px; */
   z-index: 1;
   border-radius: 70px;
   border: 2px black solid;
@@ -70,8 +93,11 @@
 
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .container-description{
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    align-self: center;
+    width: 60vw;
+    right: 0;
   }
 }

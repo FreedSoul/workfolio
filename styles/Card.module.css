@@ -20,7 +20,9 @@
 
 .card-image{
   position: relative;
-  border-radius: 15px 0px 0px 15px;
+  top: 10px;
+  /* border-radius: 15px 0px 0px 15px; */
+  overflow: hidden;
   min-width: 60%;
   height: 100%;
 }
@@ -30,9 +32,17 @@
   flex-direction: column;
   /* margin-left: 1vw; */
   /* padding: 20px; */
+  
+  margin: 15px;
+  font-family: 'Patrick Hand SC';
 }
 
 .card-description-title{
-  font-size: 0.8rem;
-  margin: 5px;
+  margin: 0%;
+}
+
+.card-description h3{
+  font-size: 1rem;
+  text-align: center;
+  margin: 0%;
 }

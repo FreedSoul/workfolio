@@ -5,15 +5,14 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles['container-description']}>
-        <p className={styles.description}>
-          <h2>web developer</h2>
-        </p>
-      </div>
+      {/* <div className={styles['top-circle-wrapper']}>
+        <div className={styles['top-circle']}></div>
+      </div> */}
       <div className={styles['container-title']}>
-        <p>
           <h1 className={styles.title}>Mateo Garcia</h1>
-        </p>
+      </div>
+      <div className={styles['container-description']}>
+          <h2>web developer</h2>
       </div>
 
       {/* <div className={styles['container-matt']}>

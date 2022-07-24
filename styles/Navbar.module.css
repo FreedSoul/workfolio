@@ -3,6 +3,7 @@
   z-index: 99;
   /* position: fixed; */
   width: 200px;
+  margin-left: 40px;
   height: 200px;
   justify-self: center;
   grid-column: 5/6;
@@ -11,6 +12,14 @@
 
 .navbar{
   z-index: 99;
+  background: linear-gradient(
+    180deg,
+     rgba(45, 248, 252, 0.38) 50%,
+    rgba(52, 160, 83, 0.78) 80%
+  );
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   /* position: absolute; */
   /* margin-left: auto;
   margin-right: auto;
@@ -42,6 +51,6 @@
 
 @media (max-width: 600px) {
   .navbar-wrapper{
-    grid-column: 4/ 6;
+    grid-column: 4/ span 2;
   }
 }

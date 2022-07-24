@@ -22,12 +22,14 @@ const Header = () => {
     '',
     'trabajo',
     'aboutme',
+    'contact',
     // 'Blog',
   ]
   const OpcionTitulo = {
     '': 'Home',
     trabajo: 'Mi Trabajo',
     aboutme: 'About Me',
+    contact: 'contact me',
     // blog: 'Blog',
   }
 

@@ -4,9 +4,9 @@ body {
   margin: 0;
   font-family: Ubuntu, Roboto, Oxygen, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 a {

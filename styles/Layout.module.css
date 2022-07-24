@@ -1,22 +1,22 @@
 .main {
-  height: 100vh;
-  background: url('../public/paisaje-neon.png');
-  background-position: center;
+  /* height: 100vh; */
+  background: url('../public/paisaje-neon.png') center center/cover repeat fixed padding-box border-box #ccc;
   /* padding: 20px; */
   /* background-size: contain; */
   /* background-size: 800px 600px; */
-  background: cover no-repeat fixed;
+
+  /* background-position: center;
+  background: cover no-repeat fixed; */
+  background-color: #6200ff;
   /* width: 99vw; */
   display: grid;
-  grid-template-columns: repeat(4, 10%) 2fr repeat(4, 10%);
-  grid-template-rows: 400px 300px 200px;
+  grid-template-columns: repeat(4, 10%) 20% repeat(4, 10%);
+  grid-template-rows: 200px 200px 1fr;
   /* flex: 1; */
   /* display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left; */
-  background-color: #6200ff;
-  font-family: 'major-mono-display';
   font-weight: lighter;
   z-index: -100;
 }
@@ -26,7 +26,7 @@
   top: -500px;
   /* left: -200px; */
   width: 800px;
-  height: 800px;
+  height: 600px;
   background: blue;
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;

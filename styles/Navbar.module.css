@@ -49,8 +49,30 @@
   margin-top: 10px;
 }
 
+.burger{
+  position: relative;
+  /* display: ; */
+  top: -83%;
+  right: 15%;
+  color:cornsilk;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
 @media (max-width: 600px) {
   .navbar-wrapper{
     grid-column: 4/ span 2;
   }
 }
+
+/* functional classes */
+
+.displaynavbar{
+  display: none;
+}
+
+.displaypages{
+  background: black;
+}
+

@@ -8,8 +8,8 @@ export default function Card(props) {
     <div className={styles.card}>
       <div
         style={{
-          borderBottomLeftRadius: '10%',
-          borderTopLeftRadius: '10%',
+          borderBottomLeftRadius: '15px',
+          borderTopLeftRadius: '15px',
           overflow: 'hidden',
         }}
         className={styles['card-image']}

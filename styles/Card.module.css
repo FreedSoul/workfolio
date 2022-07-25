@@ -20,7 +20,7 @@
 
 .card-image{
   position: relative;
-  top: 10px;
+  /* top: 10px; */
   /* border-radius: 15px 0px 0px 15px; */
   overflow: hidden;
   min-width: 60%;

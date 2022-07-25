@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-// import { FaBars } from 'react-icons/fa'
+import { CgMenu } from 'react-icons/cg'
 // import { ImCancelCircle } from 'react-icons/im'
 
 const Header = () => {
@@ -51,15 +51,42 @@ const Header = () => {
 
   return (
     <div className={styles['navbar-wrapper']}>
-      {
+      {router.pathname === '/' && (
         <div
           className={
-            styles.navbar + ' ' + (openMenu ? styles.displaynavbar : '')
+            styles.navbar +
+            ' ' +
+            (router.pathname !== '/' && !openMenu
+              ? styles.displaynavbar
+              : styles.displaypages)
           }
         >
           <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
         </div>
-      }
+      )}
+      {router.pathname !== '/' && (
+        <div
+          onClick={() => {
+            toggleMenu()
+          }}
+          className={styles.burger}
+        >
+          <CgMenu />
+        </div>
+      )}
+      {/* {!openMenu && (
+        <div
+          className={
+            styles.navbar +
+            ' ' +
+            (router.pathname !== '/'
+              ? ''
+              : styles.displaypages)
+          }
+        >
+          <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
+        </div>
+      )} */}
     </div>
   )
 }

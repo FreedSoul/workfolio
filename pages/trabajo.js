@@ -22,6 +22,12 @@ export default function Trabajo() {
       image: '/paisaje-neon.png',
       imageDescription: 'snake game',
     },
+    {
+      title: 'snake game',
+      listTechs: ['javascript', 'node', 'css'],
+      image: '/paisaje-neon.png',
+      imageDescription: 'snake game',
+    },
   ]
   return (
     <>

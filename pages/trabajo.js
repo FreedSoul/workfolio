@@ -23,10 +23,10 @@ export default function Trabajo() {
       imageDescription: 'snake game',
     },
     {
-      title: 'snake game',
+      title: 'snake game2',
       listTechs: ['javascript', 'node', 'css'],
       image: '/paisaje-neon.png',
-      imageDescription: 'snake game',
+      imageDescription: 'snake game2',
     },
   ]
   return (

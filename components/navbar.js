@@ -3,6 +3,7 @@ import styles from '../styles/Navbar.module.css'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { CgMenu } from 'react-icons/cg'
+import { CgClose } from 'react-icons/cg'
 // import { ImCancelCircle } from 'react-icons/im'
 
 const Header = () => {
@@ -44,37 +45,42 @@ const Header = () => {
   const concat = (opcion) => '/' + opcion
 
   const OpcionesGeneradas = OpcionesMenu.map((opcion, id) => (
-    <li onClick={toggleMenu} key={id}>
+    <li onClick={() => setOpenMenu(false)} key={id}>
       <Link href={'/' + opcion}>{Selected(opcion)}</Link>
     </li>
   ))
 
   return (
-    <div className={styles['navbar-wrapper']}>
-      {router.pathname === '/' && (
-        <div
-          className={
-            styles.navbar +
-            ' ' +
-            (router.pathname !== '/' && !openMenu
-              ? styles.displaynavbar
-              : styles.displaypages)
-          }
-        >
-          <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
-        </div>
-      )}
+    <>
       {router.pathname !== '/' && (
-        <div
-          onClick={() => {
-            toggleMenu()
-          }}
-          className={styles.burger}
-        >
-          <CgMenu />
+        <div onClick={toggleMenu} className={styles.burger}>
+          {openMenu ?  <CgClose /> : <CgMenu /> }
         </div>
       )}
-      {/* {!openMenu && (
+      <div className={styles['navbar-wrapper']}>
+        {router.pathname === '/' ? (
+          <div
+            className={
+              styles.navbar +
+              ' ' +
+              (router.pathname !== '/' ? styles.displaynavbar : '')
+            }
+          >
+            <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
+          </div>
+        ) : (
+          <div
+            className={
+              styles.navbar +
+              ' ' +
+              (openMenu ? styles.displaypages : styles.displaynone)
+            }
+          >
+            <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
+          </div>
+        )}
+
+        {/* {!openMenu && (
         <div
           className={
             styles.navbar +
@@ -87,7 +93,8 @@ const Header = () => {
           <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
         </div>
       )} */}
-    </div>
+      </div>
+    </>
   )
 }
 

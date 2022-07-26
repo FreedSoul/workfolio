@@ -10,11 +10,11 @@
   /* left: 200px;
   top: 100px; */
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(243, 219, 0, 0.7) 26.98%,
     rgba(63, 0, 243, 0.7) 100%
-  );
+  ); */
   border-radius: 15px;
 }
 

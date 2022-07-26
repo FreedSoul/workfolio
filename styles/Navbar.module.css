@@ -10,15 +10,15 @@
   justify-self: center;
   grid-column: 5/6;
   grid-row: 2/2;
-  
 }
 
 .navbar{
+  /* position: sticky; */
   z-index: 99;
   background: linear-gradient(
     180deg,
      rgba(45, 248, 252, 0.38) 50%,
-    rgba(52, 160, 83, 0.78) 80%
+    rgba(52, 160, 83, 0.18) 80%
   );
   border-radius: 15px;
   /* padding-top: 5px; */
@@ -68,11 +68,14 @@
   grid-row: 1/2;
   align-self: center;
   justify-self: center;
+  /* position:sticky; */
+  /* background-color: blueviolet; */
 }
 
 @media (max-width: 600px) {
   .navbar-wrapper{
     grid-column: 5/ span 1;
+    
   }
 }
 

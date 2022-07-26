@@ -9,30 +9,45 @@ export default function Trabajo() {
       listTechs: ['next', 'css', 'react'],
       image: '/paisaje-neon.png',
       imageDescription: 'static website',
+      bgstyle: {
+        background: 'linear-gradient(180deg, rgba(243, 219, 0, 0.61) 0%, rgba(0, 243, 170, 0.6039) 100%)'
+      },
     },
     {
       title: 'to do list',
       listTechs: ['vite', 'vitest', 'tailwind'],
       image: '/paisaje-neon.png',
       imageDescription: 'to do list',
+      bgstyle: {
+        background:
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.9) 0%, rgba(35, 176, 255, 0.52) 100%);',
+      },
     },
     {
       title: 'snake game',
       listTechs: ['javascript', 'node', 'css'],
       image: '/paisaje-neon.png',
       imageDescription: 'snake game',
+      bgstyle: {
+        background:
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%);',
+      },
     },
     {
       title: 'snake game2',
       listTechs: ['javascript', 'node', 'css'],
       image: '/paisaje-neon.png',
       imageDescription: 'snake game2',
+      bgstyle: {
+        background:
+          'linear-gradient(180deg, rgba(243, 219, 0, 0.7) 0%, rgba(63, 0, 243, 0.7) 100%);',
+      },
     },
   ]
   return (
     <>
       <div className={styles['page-container']}>
-          <h2 className={styles['page-title']}>My Work</h2>
+        <h2 className={styles['page-title']}>My Work</h2>
       </div>
       {/* <div className={styles.card}>
           <div className="tk-blob">
@@ -51,16 +66,21 @@ export default function Trabajo() {
         </div> */}
       <div className={styles.area}>
         {/* <div className={styles['card-container1']}> */}
-        {myWorkList.map(item => <Card title={item.title} list={item.listTechs} image={item.image} key={item.title} alt={item.imageDescription}>{item}</Card>)}
+        {myWorkList.map((item) => (
+          <Card
+            title={item.title}
+            list={item.listTechs}
+            image={item.image}
+            key={item.title}
+            alt={item.imageDescription}
+            bgstyle={item.bgstyle}
+          >
+            {item}
+          </Card>
+        ))}
         {/* <Card title={'pagina web estatica'} list={milista} /> */}
         {/* </div> */}
         {/* <div className={styles['card-container2']}> */}
-        {/* <Card /> */}
-        {/* </div> */}
-        {/* <div className={styles['card-container3']}> */}
-        {/* <Card /> */}
-        {/* </div> */}
-        {/* <div className={styles['card-container4']}> */}
         {/* <Card /> */}
         {/* </div> */}
       </div>

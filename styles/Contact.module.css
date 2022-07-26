@@ -13,12 +13,6 @@
   font-family: 'Rock Salt', cursive;
 }
 
-.description{
-  position: relative;
-  z-index: 100;
-  width: 300px;
-}
-
 .area {
   grid-column: 2 / span 7;
   grid-row: 1/4;
@@ -28,44 +22,50 @@
   padding: 20px;
   flex-wrap: wrap;
   position: relative;
-  /* width: 1224px; */
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   justify-self: center;
   width: 100%;
   margin-top: 150px;
   /* left: 119px; */
   /* top: 191px; */
-
-  background: linear-gradient(
-    180deg,
-    rgba(229, 199, 45, 0.52) 35.27%,
-    rgba(45, 229, 96, 0.78) 100%
-  );
+  height: fit-content;
+  background: linear-gradient(180deg, rgba(229, 199, 45, 0.52) 35.27%, rgba(45, 229, 96, 0.78) 100%);
+box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
   box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+
 }
 
-/* .card-container1{
+.subarea {
+  z-index: 0;
+  display: flex;
+  /* justify-content: center; */
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  flex-wrap: wrap;
   position: relative;
-  left: 100px;
-  top: 100px;
+  width: 100%;
+  background: rgba(80, 28, 163, 0.43);
+  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  justify-content: center;
+  line-height: 1.7;
+  
 }
-.card-container2{
-  position: relative;
-  left: 300px;
-  top: 100px;
-} */
-/* .card-container3{
-  position: relative;
-  left: -300px;
-  top: 450px;
-} */
-/* .card-container4{
-  position: relative;
-  left: -1700px;
-  top: 450px;
-} */
+
+.subarea h1{
+  color: rgb(95, 249, 249);
+}
+
+.form{
+  position: absolute;
+  width: 593.27px;
+height: 741.85px;
+background: rgba(135, 133, 220, 0.79);
+border-radius: 4px;
+}
 
 @media (max-width: 600px) {
   .area {

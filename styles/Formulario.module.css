@@ -1,0 +1,140 @@
+.wrapper {
+  /* background: rgb(238, 212, 212); */
+  /*width: 600px;
+    height: 600px; */
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 60px 0 rgba(162, 165, 214, 0.4);
+  border-radius: 5px;
+  /* max-width: 880px; */
+  /* width: 150%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  color: white;
+  /* padding-top: 5px; */
+  padding: 15px;
+  /* left: 0; */
+  /* right: 0; */
+  /* position: absolute; */
+  /* border-top: 5px solid #57b382; */
+  z-index: 100;
+  border-radius: 15px;
+  /* animation: bounce 2.5s infinite; */
+}
+
+.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+/* 
+.formtitle{
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    font-weight: bold;
+} */
+
+.icontitle {
+  font-size: 2rem;
+}
+
+/* .title{
+    color: #4b4a4a;
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 2/span 3 ;
+} */
+
+.subtitle {
+  color: rgb(0, 0, 0);
+  /* font-family: 'Rock salt'; */
+  font-family: 'Patrick Hand SC';
+}
+
+.name {
+  background-color: #4f4f4f;
+  color: white;
+}
+/* .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+} */
+
+.email {
+  background-color: #4b4a4a;
+  color: white;
+  height: 2em;
+}
+
+/* .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+} */
+
+.message {
+  background-color: #4b4a4a;
+  color: white;
+  height: 8rem;
+  width: 30vw;
+  margin: 25px auto;
+}
+
+/* .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+} */
+
+.formEntry {
+  /* position: absolute; */
+  display: block;
+  height: 2.5em;
+  margin: 25px auto;
+  min-width: 150px;
+  width: 30vw;
+  /* padding: 10px; */
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: #17a65a;
+  font-size: 20px;
+}
+
+/* .submit:hover {
+    box-shadow: 10px 10px 10px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+} */
+
+.submit:focus,
+.formEntry:focus,
+.message:focus {
+  box-shadow: none;
+  outline: rgb(11, 239, 98) double 2px;
+  outline-offset: 0.05em;
+}
+
+@media (max-width: 600px) {
+  .formEntry {
+    /* position: absolute; */
+    width: 60vw;
+  }
+
+  .message {
+    width: 60vw;
+  }
+}

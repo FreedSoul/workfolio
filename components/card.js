@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Card(props) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={props.bgstyle}>
       <div
         style={{
           borderBottomLeftRadius: '15px',

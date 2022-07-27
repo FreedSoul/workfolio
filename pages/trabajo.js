@@ -20,7 +20,7 @@ export default function Trabajo() {
       imageDescription: 'to do list',
       bgstyle: {
         background:
-          'linear-gradient(180deg, rgba(1, 216, 87, 0.9) 0%, rgba(35, 176, 255, 0.52) 100%);',
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.9) 0%, rgba(35, 176, 255, 0.52) 100%)',
       },
     },
     {
@@ -30,19 +30,19 @@ export default function Trabajo() {
       imageDescription: 'snake game',
       bgstyle: {
         background:
-          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%);',
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%)',
       },
     },
-    {
-      title: 'snake game2',
-      listTechs: ['javascript', 'node', 'css'],
-      image: '/paisaje-neon.png',
-      imageDescription: 'snake game2',
-      bgstyle: {
-        background:
-          'linear-gradient(180deg, rgba(243, 219, 0, 0.7) 0%, rgba(63, 0, 243, 0.7) 100%);',
-      },
-    },
+    // {
+    //   title: 'snake game2',
+    //   listTechs: ['javascript', 'node', 'css'],
+    //   image: '/paisaje-neon.png',
+    //   imageDescription: 'snake game2',
+    //   bgstyle: {
+    //     background:
+    //       'linear-gradient(180deg, rgba(243, 219, 0, 0.7) 0%, rgba(63, 0, 243, 0.7) 100%)',
+    //   },
+    // },
   ]
   return (
     <>
@@ -78,11 +78,6 @@ export default function Trabajo() {
             {item}
           </Card>
         ))}
-        {/* <Card title={'pagina web estatica'} list={milista} /> */}
-        {/* </div> */}
-        {/* <div className={styles['card-container2']}> */}
-        {/* <Card /> */}
-        {/* </div> */}
       </div>
     </>
   )

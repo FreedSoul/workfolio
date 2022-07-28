@@ -22,7 +22,7 @@ export default function Card(props) {
         />
       </div>
       <div className={styles['card-description']}>
-        <h3>{props.title}</h3>
+        <h2>{props.title}</h2>
         {/* <p className={styles['card-description-title']}>
         </p> */}
         <div className={styles['description-stack']}>

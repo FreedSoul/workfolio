@@ -53,11 +53,11 @@ const Header = () => {
     <>
       {router.pathname !== '/' && (
         <div onClick={toggleMenu} className={styles.burger}>
-          {openMenu ?  <CgClose /> : <CgMenu /> }
+          {openMenu ? <CgClose /> : <CgMenu />}
         </div>
       )}
-      <div className={styles['navbar-wrapper']}>
-        {router.pathname === '/' ? (
+      {router.pathname === '/' ? (
+        <div className={styles['navbar-wrapper']}>
           <div
             className={
               styles.navbar +
@@ -67,32 +67,26 @@ const Header = () => {
           >
             <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
           </div>
-        ) : (
+        </div>
+      ) : (
+        <div
+          className={
+            styles['navbar-wrapper'] +
+            ' ' +
+            (!openMenu && styles.displaynone)
+          }
+        >
           <div
             className={
               styles.navbar +
               ' ' +
-              (openMenu ? styles.displaypages : styles.displaynone)
+              (openMenu && styles.displaypages)
             }
           >
             <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
           </div>
-        )}
-
-        {/* {!openMenu && (
-        <div
-          className={
-            styles.navbar +
-            ' ' +
-            (router.pathname !== '/'
-              ? ''
-              : styles.displaypages)
-          }
-        >
-          <ul className={styles.opciones}>{OpcionesGeneradas}</ul>
         </div>
-      )} */}
-      </div>
+      )}
     </>
   )
 }

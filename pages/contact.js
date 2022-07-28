@@ -1,6 +1,8 @@
 // import styles from '../styles/Home.module.css'
 import Formulario from '../components/formulario'
 import styles from '../styles/Contact.module.css'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+import {VscGithub} from 'react-icons/vsc'
 // import Card from '../components/card'
 
 export default function Trabajo() {
@@ -12,7 +14,16 @@ export default function Trabajo() {
 
       <div className={styles.area}>
         <div className={styles.subarea}>
-          <Formulario></Formulario>
+          <div className={styles.networks}>
+            <div className={styles['social-icons']}>
+              <AiOutlineLinkedin />
+            </div>
+            <div className={styles['social-icons']}>
+              <VscGithub />
+            </div>
+          </div>
+
+          <Formulario/>
           {/* <form className={styles.form}></form> */}
         </div>
       </div>

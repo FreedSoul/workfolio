@@ -31,8 +31,8 @@ const Formulario = () => {
           </div>
           <div className={styles.subtitle}>Correo electronico</div>
           <input
-            id="correo"
-            type="text"
+            // id="correo"
+            // type="text"
             className={styles['email'] + ' ' + styles['formEntry']}
             placeholder="ejemplo@tucorreo.com"
             name="email"
@@ -44,14 +44,6 @@ const Formulario = () => {
             className={styles['email'] + ' ' + styles['formEntry']}
             placeholder="Confirma Correo"
             name="email"
-          />
-          <div className={styles.subtitle}>De donde nos escribes?</div>
-          <input
-            id="ciudad"
-            type="text"
-            className={styles['email'] + ' ' + styles['formEntry']}
-            placeholder="Antioquia - Colombia"
-            name="ciudad"
           />
           <div className={styles.subtitle}>Nombre</div>
           <input
@@ -72,7 +64,7 @@ const Formulario = () => {
           <div className={styles.subtitle}>Mensaje</div>
           <textarea
             id="mesagge"
-            className={styles['message']}
+            className={styles['message'] + ' ' + styles['formEntry']}
             placeholder="Escribenos tu Mensaje Aqui"
             name="message"
           ></textarea>
@@ -80,7 +72,7 @@ const Formulario = () => {
           {/* <input id="mensaje" type="checkbox" className={styles.termsConditions} value="Term"/> */}
           {/* <label  htmlFor="terms"> I Accept the</label> */}
           <button
-            className={styles['submit'] + ' ' + styles['formEntry']}
+            className={styles['submit'] }
             type="submit"
           >
             Submit

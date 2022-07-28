@@ -7,26 +7,27 @@ export default function Trabajo() {
     {
       title: 'static website',
       listTechs: ['next', 'css', 'react'],
-      image: '/paisaje-neon.png',
+      image: '/dianas-project-snap.png',
       imageDescription: 'static website',
       bgstyle: {
-        background: 'linear-gradient(180deg, rgba(243, 219, 0, 0.61) 0%, rgba(0, 243, 170, 0.6039) 100%)'
+        background:
+          'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
       },
     },
     {
       title: 'to do list',
       listTechs: ['vite', 'vitest', 'tailwind'],
-      image: '/paisaje-neon.png',
+      image: '/todolist-snap.png',
       imageDescription: 'to do list',
       bgstyle: {
         background:
-          'linear-gradient(180deg, rgba(1, 216, 87, 0.9) 0%, rgba(35, 176, 255, 0.52) 100%)',
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
       },
     },
     {
       title: 'snake game',
       listTechs: ['javascript', 'node', 'css'],
-      image: '/paisaje-neon.png',
+      image: '/snake-game-snap.png',
       imageDescription: 'snake game',
       bgstyle: {
         background:

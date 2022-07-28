@@ -16,6 +16,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - when the 'Image' component from [next], take more than the parent width with layout='fill', wrap with a container and dont forget to use position: relative[link](https://stackoverflow.com/questions/68920647/how-to-add-border-radius-to-next-js-image)
 - bug in chrome (my version 103.0.5060.134) with fr unit not being responsive using grid-templetate-columns(solved with % units)
 - to delete the spaces in **li** with css, use padding: 0; in the respective **ul**
+- remember delete "**;**" in inline style must be object an {key:"without semicolon"}  
 
 ## guides applied
 

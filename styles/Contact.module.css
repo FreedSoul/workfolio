@@ -1,13 +1,13 @@
-.page-container{
+.page-container {
   display: flex;
   flex-direction: column;
   height: 10vh;
-  grid-column: 1/span 10;
+  grid-column: 1 / span 10;
   grid-row: 1/2;
   align-items: center;
 }
 
-.page-title{
+.page-title {
   color: aliceblue;
   z-index: 99;
   font-family: 'Rock Salt', cursive;
@@ -30,11 +30,14 @@
   /* left: 119px; */
   /* top: 191px; */
   height: fit-content;
-  background: linear-gradient(180deg, rgba(229, 199, 45, 0.52) 35.27%, rgba(45, 229, 96, 0.78) 100%);
-box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    180deg,
+    rgba(229, 199, 45, 0.52) 35.27%,
+    rgba(45, 229, 96, 0.78) 100%
+  );
   box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25); */
   border-radius: 4px;
-
 }
 
 .subarea {
@@ -48,23 +51,24 @@ box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
   position: relative;
   width: 100%;
   background: rgba(80, 28, 163, 0.43);
-  box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25); */
+  
   border-radius: 4px;
   justify-content: center;
   line-height: 1.7;
-  
 }
 
-.subarea h1{
+.subarea h1 {
   color: rgb(95, 249, 249);
 }
 
-.form{
+.form {
   position: absolute;
   width: 593.27px;
-height: 741.85px;
-background: rgba(135, 133, 220, 0.79);
-border-radius: 4px;
+  height: 741.85px;
+  background: rgba(135, 133, 220, 0.79);
+  border-radius: 4px;
+  
 }
 
 @media (max-width: 600px) {

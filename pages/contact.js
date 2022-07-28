@@ -3,6 +3,7 @@ import Formulario from '../components/formulario'
 import styles from '../styles/Contact.module.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import {VscGithub} from 'react-icons/vsc'
+import {FaFigma} from 'react-icons/fa'
 // import Card from '../components/card'
 
 export default function Trabajo() {
@@ -21,9 +22,12 @@ export default function Trabajo() {
             <div className={styles['social-icons']}>
               <VscGithub />
             </div>
+            <div className={styles['social-icons']}>
+              <FaFigma />
+            </div>
           </div>
 
-          <Formulario/>
+          <Formulario />
           {/* <form className={styles.form}></form> */}
         </div>
       </div>

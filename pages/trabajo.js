@@ -7,7 +7,7 @@ export default function Trabajo() {
     {
       title: 'static website',
       listTechs: ['next', 'css', 'react'],
-      image: '/dianas-project-snap.png',
+      image: '/dianas-project-snap.PNG',
       imageDescription: 'static website',
       bgstyle: {
         background:
@@ -17,7 +17,7 @@ export default function Trabajo() {
     {
       title: 'to do list',
       listTechs: ['vite', 'vitest', 'tailwind'],
-      image: '/todolist-snap.png',
+      image: '/todolist-snap.PNG',
       imageDescription: 'to do list',
       bgstyle: {
         background:
@@ -27,7 +27,7 @@ export default function Trabajo() {
     {
       title: 'snake game',
       listTechs: ['javascript', 'node', 'css'],
-      image: '/snake-game-snap.png',
+      image: '/snake-game-snap.PNG',
       imageDescription: 'snake game',
       bgstyle: {
         background:

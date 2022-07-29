@@ -1,13 +1,13 @@
-.page-container{
+.page-container {
   display: flex;
   flex-direction: column;
   height: 10vh;
-  grid-column: 1/span 10;
+  grid-column: 1 / span 10;
   grid-row: 1/2;
   align-items: center;
 }
 
-.page-title{
+.page-title {
   color: aliceblue;
   z-index: 99;
   font-family: 'Rock Salt', cursive;
@@ -32,28 +32,36 @@
   background: rgba(129, 141, 255, 0.6);
   box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  /* font-family: 'Permanent Marker', cursive; */
 }
 
 .subarea {
   z-index: 0;
   display: flex;
-  /* justify-content: center; */
   color: aliceblue;
   text-align: center;
   padding: 20px;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-  background: linear-gradient(180deg, rgba(8, 19, 61, 0.79) 0%, rgba(4, 172, 71, 0.4819) 100%); 
+  background: linear-gradient(
+    180deg,
+    rgba(8, 19, 61, 0.79) 0%,
+    rgba(4, 172, 71, 0.4819) 100%
+  );
   box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   justify-content: center;
   line-height: 1.7;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-size: 1.5rem;
+  /* font-family: 'Permanent Marker', cursive; */
 }
 
-.area h1{
+.area h1 {
   color: rgb(95, 249, 249);
-  font-family: 'Rock Salt', cursive;
+  /* font-family: 'Rock Salt', cursive; */
+  font-family: 'Permanent Marker', cursive;
 }
 
 @media (max-width: 600px) {

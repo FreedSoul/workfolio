@@ -6,6 +6,7 @@
   inset -10px 0 20px #0ff, inset 10px 0 20px #f0f, inset -5px 0 5px #0ff,
   0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
   border-radius: 15px;
+  /* min-width:300px; */
 }
 
 .form {
@@ -44,20 +45,22 @@
 .subtitle {
   color: rgb(0, 0, 0);
   /* font-family: 'Rock salt'; */
-  font-family: 'Patrick Hand SC';
+  /* font-family: 'Patrick Hand SC'; */
+  font-family: 'Permanent Marker', cursive;
   font-size: 1.2rem;
 }
 
 .name {
   background-color:rgba(81, 4, 215, 0.57);
   color: white;
+  font-family: 'Edu QLD Beginner', cursive;
 }
 
 .name:hover {
     /* border-bottom: 5px solid #0e3721; */
-    height: 40px;
-    width: 90%;
-    transition: ease 0.5s;
+  height: 40px;
+  width: 97%;
+  transition: ease 0.5s;
 }
 
 .email {
@@ -76,7 +79,7 @@
 .message {
   background-color:rgba(81, 4, 215, 0.57);
   color: white;
-  height: 8rem;
+  height: 6rem !important;
   width: 30vw;
   margin: 25px auto;
 }
@@ -99,6 +102,7 @@
   border-radius: 2px;
   border: none;
   transition: all 0.5s ease 0s;
+  font-family: 'Edu QLD Beginner', cursive;
 }
 
 .submit {
@@ -113,6 +117,7 @@
   border: none;
   color: white;
   background-color: #26fc5197;
+  box-shadow:0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
   font-size: 20px;
 }
 
@@ -143,6 +148,11 @@
 }
 
 @media (max-width: 600px) {
+
+  .wrapper {
+  margin-top:100px;
+}
+
   .formEntry {
     /* position: absolute; */
     width: 60vw;

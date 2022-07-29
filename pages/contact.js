@@ -4,6 +4,7 @@ import styles from '../styles/Contact.module.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import {VscGithub} from 'react-icons/vsc'
 import {FaFigma} from 'react-icons/fa'
+import {IoLogoGoogleplus} from 'react-icons/io'
 // import Card from '../components/card'
 
 export default function Trabajo() {
@@ -25,8 +26,10 @@ export default function Trabajo() {
             <div className={styles['social-icons']}>
               <FaFigma />
             </div>
+            <div className={styles['social-icons']}>
+              <IoLogoGoogleplus />
+            </div>
           </div>
-
           <Formulario />
           {/* <form className={styles.form}></form> */}
         </div>

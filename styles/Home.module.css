@@ -1,12 +1,9 @@
 .container {
-  /* padding: 0 0rem; */
   display: flex;
   flex-direction: column;
-  /* height: 10vh; */
   grid-column: 1 / span 10;
   grid-row: 1/2;
   align-items: center;
-  /* width: 100vw; */
 }
 
 /* .title {
@@ -50,7 +47,7 @@
     0 0 0 40px rgba(255, 222, 0, 0.25), 0 0 0 60px rgba(255, 222, 0, 0.13),
     0 0 0 80px rgba(255, 222, 0, 0.06), 0 0 0 100px rgba(255, 222, 0, 0),
     0 0 400px 100px rgba(255, 222, 0, 0.06);
-   /* box-shadow:
+  /* box-shadow:
     inset 0 0 20px #fff,
     inset 10px 0 20px #f0f,
     inset -10px 0 20px #0ff,
@@ -71,24 +68,22 @@
 }
 
 .container-title {
-  /* color: aqua; */
   color: aliceblue;
 }
 
 .container-description {
   text-align: center;
   font-family: 'Rock Salt';
+  /* font-family: 'Permanent Marker', cursive; */
   font-size: 1rem;
   line-height: 1;
-  background-color: rgba(250, 235, 215, 0.802);
+  background-color: rgba(250, 235, 215, 1);
   position: relative;
   width: 30vw;
   right: 50px;
-  /* height: 60px; */
-  /* top: 140px; */
   z-index: 1;
   border-radius: 70px;
-  border: 2px black solid;
+  border: 1px black solid;
   align-self: flex-end;
   filter: drop-shadow(10px 14px 40px rgb(255, 255, 255));
 }

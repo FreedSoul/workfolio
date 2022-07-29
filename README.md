@@ -17,7 +17,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - bug in chrome (my version 103.0.5060.134) with fr unit not being responsive using grid-templetate-columns(solved with % units)
 - to delete the spaces in **li** with css, use padding: 0; in the respective **ul**
 - remember delete "**;**" in inline style must be object an {key:"without semicolon"}  
+- if images not load at build in nextjs check the name of the file is case sensitive [this link talk about it](https://stackoverflow.com/questions/70797559/next-image-not-loading-in-production/70916637)  
 
 ## guides applied
 
 [for design tokens i use](https://www.smashingmagazine.com/2021/07/global-local-styling-nextjs/)
+
+## todo
+
+- links en cards
+- links en social networks
+- traducir aboutme y resto de texto
+- add react hook form

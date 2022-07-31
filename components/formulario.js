@@ -1,5 +1,7 @@
 import styles from '../styles/Formulario.module.css'
 import { useForm } from 'react-hook-form'
+import { useState } from 'react'
+import { sendForm,init } from 'emailjs-com'
 // import Script from 'next/script'
 // import { useState } from 'react'
 import { RiMailSendLine } from 'react-icons/ri'
@@ -9,6 +11,14 @@ const Formulario = () => {
   // const [name,setName] = useState('')
   // const [email,setEmail] = useState('')
   // const [message,setMessage] = useState('')
+  init('gQXXLvIXoJZEhU4X0')
+  const [contactNumber, setContactNumber] = useState('000000')
+  const [messageSent,setmessageSent] = useState('')
+
+  const generateContactNumber = () => {
+    const numStr = '000000' + ((Math.random() * 1000000) | 0)
+    setContactNumber(numStr.substring(numStr.length - 6))
+  }
   const {
     register,
     handleSubmit,
@@ -20,17 +30,39 @@ const Formulario = () => {
   // console.log(getValues("emailconfirm"))
   // console.log(getValues("email"))
 
-  const onSubmit = data => console.log(data)
+  // const onSubmit = data => console.log(data)
+
+  const onSubmit = (data) => {
+    const form = document.querySelector('#contact-form')
+
+    console.log(data);
+    generateContactNumber()
+    sendForm("contact_form","template_5sln56o", '#contact-form').then(
+      function (response) {
+        console.log('SUCCESS!', response.status, response.text)
+        setmessageSent('success')
+      },
+      function (error) {
+        console.log('FAILED...', error)
+        setmessageSent('failed')
+      },
+      form.reset()
+    )
+  }
+
   return (
     <>
       <div className={styles.wrapper}>
         <form
+          id='contact-form'
           onSubmit={handleSubmit(onSubmit)}
           className={styles.form}
           name="submit-to-google-sheet"
           // action={'scriptURL4'}
           method="POST"
         >
+        {messageSent==='success' && <div>The Form has been sent!</div> }
+        {messageSent==='failed' && <div>something gone wrong,please try again!</div>}
           <div className={styles.formtitle}>
             <div className={styles.icontitle}>
               <RiMailSendLine />
@@ -42,6 +74,8 @@ const Formulario = () => {
               /> */}
             </div>
           </div>
+          {/* hidden input to update contact random number (onSubmit()) */}
+          <input type="hidden" name="contact_number" value={contactNumber} /> 
           <div className={styles.subtitle}>Email</div>
           <input
             // id="correo"
@@ -58,7 +92,11 @@ const Formulario = () => {
             name="email"
           />
           <div className={styles.subtitle}>Confirm Email</div>
-          {errors.confirm && <div role={'alert'} className={styles.alertdiv}><p>you must confirm your email</p></div>}
+          {errors.confirm && (
+            <div role={'alert'} className={styles.alertdiv}>
+              <p>you must confirm your email</p>
+            </div>
+          )}
           <input
             {...register('confirm', {
               validate: (value) => value === getValues('email'),

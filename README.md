@@ -25,7 +25,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## todo
 
-- links en cards
-- links en social networks
 - traducir aboutme y resto de texto
 - add react hook form

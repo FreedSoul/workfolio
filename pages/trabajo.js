@@ -9,6 +9,7 @@ export default function Trabajo() {
       listTechs: ['next', 'css', 'react'],
       image: '/dianas-project-snap.PNG',
       imageDescription: 'static website',
+      link: 'https://dianas-project.vercel.app/',
       bgstyle: {
         background:
           'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
@@ -19,6 +20,7 @@ export default function Trabajo() {
       listTechs: ['vite', 'vitest', 'tailwind'],
       image: '/todolist-snap.PNG',
       imageDescription: 'to do list',
+      link: 'https://github.com/FreedSoul/toDoApp',
       bgstyle: {
         background:
           'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
@@ -29,6 +31,7 @@ export default function Trabajo() {
       listTechs: ['javascript', 'node', 'css'],
       image: '/snake-game-snap.PNG',
       imageDescription: 'snake game',
+      link: 'https://github.com/FreedSoul/snake-game',
       bgstyle: {
         background:
           'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%)',
@@ -68,16 +71,20 @@ export default function Trabajo() {
       <div className={styles.area}>
         {/* <div className={styles['card-container1']}> */}
         {myWorkList.map((item) => (
-          <Card
-            title={item.title}
-            list={item.listTechs}
-            image={item.image}
-            key={item.title}
-            alt={item.imageDescription}
-            bgstyle={item.bgstyle}
-          >
-            {item}
-          </Card>
+          // <link key={item.title} href={"https://stackoverflow.com/"} passHref={true}>
+          <a key={item.title} href={item.link}>
+            <Card
+              key={item.title}
+              title={item.title}
+              list={item.listTechs}
+              image={item.image}
+              alt={item.imageDescription}
+              bgstyle={item.bgstyle}
+            >
+              {item}
+            </Card>
+          </a>
+          // </link>
         ))}
       </div>
     </>

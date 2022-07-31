@@ -90,6 +90,27 @@
   box-shadow: 0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
 }
 
+.tooltip-email .tooltip-text{
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin: 2px;
+  padding: 5px 5px;
+  font-size: .9rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 99;
+  transition-delay:.5s;
+}
+
+.social-icons:hover
+.tooltip-text{
+  visibility: visible;
+}
+
 @media (max-width: 600px) {
   .area {
     /* height: 1283px; */

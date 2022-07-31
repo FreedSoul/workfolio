@@ -147,6 +147,20 @@
   color: rgb(255, 255, 255);
 }
 
+.alert{
+  box-shadow: none;
+  outline: rgb(239, 11, 11) double 3px;
+  outline-offset: 0.08em;
+}
+.alertdiv{
+  box-shadow: black;
+  outline: rgb(239, 11, 11) double 3px;
+  /* outline-offset: 0.08em; */
+  /* background-color: rgb(0, 0, 0); */
+  font-family: 'Permanent Marker', cursive;
+  font-size: small;
+}
+
 @media (max-width: 600px) {
 
   .wrapper {

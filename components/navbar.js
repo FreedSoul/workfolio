@@ -28,9 +28,9 @@ const Header = () => {
   ]
   const OpcionTitulo = {
     '': 'Home',
-    trabajo: 'Mi Trabajo',
-    aboutme: 'About Me',
-    contact: 'contact me',
+    trabajo: 'Work',
+    aboutme: 'About',
+    contact: 'contact',
     // blog: 'Blog',
   }
 

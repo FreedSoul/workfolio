@@ -1,4 +1,5 @@
 import styles from '../styles/Formulario.module.css'
+import { useForm } from 'react-hook-form'
 // import Script from 'next/script'
 // import { useState } from 'react'
 import { RiMailSendLine } from 'react-icons/ri'
@@ -8,14 +9,26 @@ const Formulario = () => {
   // const [name,setName] = useState('')
   // const [email,setEmail] = useState('')
   // const [message,setMessage] = useState('')
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    getValues
+  } = useForm()
 
+  console.log(errors)
+  // console.log(getValues("emailconfirm"))
+  // console.log(getValues("email"))
+
+  const onSubmit = data => console.log(data)
   return (
     <>
       <div className={styles.wrapper}>
         <form
+          onSubmit={handleSubmit(onSubmit)}
           className={styles.form}
           name="submit-to-google-sheet"
-          action={'scriptURL4'}
+          // action={'scriptURL4'}
           method="POST"
         >
           <div className={styles.formtitle}>
@@ -29,40 +42,68 @@ const Formulario = () => {
               /> */}
             </div>
           </div>
-          <div className={styles.subtitle}>Correo electronico</div>
+          <div className={styles.subtitle}>Email</div>
           <input
             // id="correo"
             // type="text"
-            className={styles['email'] + ' ' + styles['formEntry']}
+            {...register('email', { required: true })}
+            className={
+              styles['email'] +
+              ' ' +
+              styles['formEntry'] +
+              ' ' +
+              (errors.confirm ? styles.alert : '')
+            }
             placeholder="ejemplo@tucorreo.com"
             name="email"
           />
-          <div className={styles.subtitle}>Confirmar Correo</div>
+          <div className={styles.subtitle}>Confirm Email</div>
+          {errors.confirm && <div role={'alert'} className={styles.alertdiv}><p>you must confirm your email</p></div>}
           <input
+            {...register('confirm', {
+              validate: (value) => value === getValues('email'),
+            })}
             id="correo"
             type="text"
-            className={styles['email'] + ' ' + styles['formEntry']}
-            placeholder="Confirma Correo"
-            name="email"
+            className={
+              styles['email'] +
+              ' ' +
+              styles['formEntry'] +
+              ' ' +
+              (errors.confirm ? styles.alert : '')
+            }
+            placeholder="ejemplo@tucorreo.com"
+            // name="confirm"
           />
-          <div className={styles.subtitle}>Nombre</div>
+          <div className={styles.subtitle}>Name</div>
           <input
+            {...register('name', {
+              required: true,
+              minLength: {
+                value: 2,
+                message: 'debe tener minimo 2 caracteres',
+              },
+            })}
             id="nombre"
             type="text"
             className={styles['name'] + ' ' + styles['formEntry']}
             placeholder="Nombre"
             name="name"
           />
-          <div className={styles.subtitle}>Telefono</div>
+          <div className={styles.subtitle}>Phone</div>
           <input
+            {...register('phone', {
+              required: true,
+            })}
             id="telefono"
             type="text"
             className={styles['name'] + ' ' + styles['formEntry']}
             placeholder="2761212 - 313 564 8712"
-            name="telefono"
+            name="phone"
           />
-          <div className={styles.subtitle}>Mensaje</div>
+          <div className={styles.subtitle}>Message</div>
           <textarea
+            {...register('message')}
             id="mesagge"
             className={styles['message'] + ' ' + styles['formEntry']}
             placeholder="Escribenos tu Mensaje Aqui"
@@ -71,10 +112,7 @@ const Formulario = () => {
           <br />
           {/* <input id="mensaje" type="checkbox" className={styles.termsConditions} value="Term"/> */}
           {/* <label  htmlFor="terms"> I Accept the</label> */}
-          <button
-            className={styles['submit'] }
-            type="submit"
-          >
+          <button className={styles['submit']} type="submit">
             Submit
           </button>
         </form>

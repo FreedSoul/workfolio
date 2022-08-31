@@ -92,9 +92,9 @@
     0 0 0 40px rgba(255, 222, 0, 0.25), 0 0 0 60px rgba(255, 222, 0, 0.13),
     0 0 0 80px rgba(255, 222, 0, 0.06), 0 0 0 100px rgba(255, 222, 0, 0),
     0 0 400px 100px rgba(255, 222, 0, 0.06);
-  animation:
+  /* animation:
 		sunrise 2s infinite ease-out forwards,
-		rays 2s 2s infinite linear;
+		rays 2s 2s infinite linear; */
 }
 
 

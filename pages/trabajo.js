@@ -5,8 +5,19 @@ import Card from '../components/card'
 export default function Trabajo() {
   const myWorkList = [
     {
+      title: 'Pokedex App',
+      listTechs: ['next', 'chakra-ui', 'react', 'framer-motion'],
+      image: '/podekex-app-shot.png',
+      imageDescription: 'Pokedex App',
+      link: 'https://pkmn-react.vercel.app/',
+      bgstyle: {
+        background:
+          'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
+      },
+    },
+    {
       title: 'static website',
-      listTechs: ['next', 'css', 'react'],
+      listTechs: ['next', 'css', 'react', 'framer-motion'],
       image: '/dianas-project-snap.PNG',
       imageDescription: 'static website',
       link: 'https://dianas-project.vercel.app/',
@@ -37,16 +48,6 @@ export default function Trabajo() {
           'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%)',
       },
     },
-    // {
-    //   title: 'snake game2',
-    //   listTechs: ['javascript', 'node', 'css'],
-    //   image: '/paisaje-neon.png',
-    //   imageDescription: 'snake game2',
-    //   bgstyle: {
-    //     background:
-    //       'linear-gradient(180deg, rgba(243, 219, 0, 0.7) 0%, rgba(63, 0, 243, 0.7) 100%)',
-    //   },
-    // },
   ]
   return (
     <>

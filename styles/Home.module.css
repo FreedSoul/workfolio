@@ -69,6 +69,7 @@
 
 .container-title {
   color: aliceblue;
+  display: inline-block;
 }
 
 .container-description {
@@ -79,7 +80,8 @@
   line-height: 1;
   background-color: rgba(250, 235, 215, 1);
   position: relative;
-  width: 30vw;
+  /* width: 30vw; */
+  padding: 0px 20px;
   right: 50px;
   z-index: 1;
   border-radius: 70px;

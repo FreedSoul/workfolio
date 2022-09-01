@@ -94,9 +94,16 @@
     grid-column: 5/ span 1;
     
   }
+  .navbar-wrapper{
+  z-index: 99;
+  height: 300px;
+  justify-self: center;
+  grid-column: 5/6;
+  grid-row: 3/3;
+}
 }
 
-/* functional classes */
+/*! functional classes */
 
 .displaynone{
   display: none;

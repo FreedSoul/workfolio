@@ -3,13 +3,13 @@
   display: flex;
   z-index: 3;
   position: relative;
-  width: 30vw;
-  min-width: 400px;
+  /* width: 20vw; */
+  width: 35vw;
   height: 250px;
   margin: 10px;
   box-shadow:
     0 0 5px #fff,
-    -5px 0 10px #f0f,
+    -1px 0 10px #f0f,
     5px 0 10px #0ff; 
   border-radius: 15px;
 }
@@ -58,4 +58,15 @@
   font-size: 1rem;
   text-align: center;
   margin: 0%;
+}
+
+.list{
+  padding-left: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .card {
+  width: 90vw;
+  }
 }

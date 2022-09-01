@@ -26,7 +26,7 @@ export default function Card(props) {
         {/* <p className={styles['card-description-title']}>
         </p> */}
         <div className={styles['description-stack']}>
-          <ul>
+          <ul className={styles['list']}>
             {props.list.map((item, count) => (
               <li key={1 + count}>{item}</li>
             ))}

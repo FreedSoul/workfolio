@@ -101,8 +101,8 @@
 @media screen and (max-width: 600px) {
   .container-description {
     /* margin-top: 20px; */
-    align-self: center;
+    /* align-self: center;
     width: 60vw;
-    right: 0;
+    right: 0; */
   }
 }

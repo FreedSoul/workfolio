@@ -31,7 +31,7 @@ export default function Trabajo() {
       listTechs: ['vite', 'vitest', 'tailwind'],
       image: '/todolist-snap.PNG',
       imageDescription: 'to do list',
-      link: 'https://github.com/FreedSoul/toDoApp',
+      link: 'freedsoul.github.io/todoapp/',
       bgstyle: {
         background:
           'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',

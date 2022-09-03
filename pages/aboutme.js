@@ -1,5 +1,5 @@
 // import styles from '../styles/Home.module.css'
-import Image from 'next/Image'
+import Image from 'next/image'
 import styles from '../styles/Aboutme.module.css'
 // import { AiOutlineLinkedin } from 'react-icons/ai'
 // import { FaFigma, FaGithubAlt } from 'react-icons/fa'

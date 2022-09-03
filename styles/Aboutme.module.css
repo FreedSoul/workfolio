@@ -64,6 +64,10 @@
   font-family: 'Permanent Marker', cursive;
 }
 
+.technologies{
+  /* display:flex; */
+}
+
 @media (max-width: 600px) {
   .area {
     /* height: 1283px; */

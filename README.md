@@ -18,7 +18,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - to delete the spaces in **li** with css, use padding: 0; in the respective **ul**
 - remember delete "**;**" in inline style must be object an {key:"without semicolon"}  
 - if images not load at build in nextjs check the name of the file is case sensitive [this link talk about it](https://stackoverflow.com/questions/70797559/next-image-not-loading-in-production/70916637)
-- the page have been laggy because of animation of rule [box-shadow], i read [this article](https://tobiasahlin.com/blog/how-to-animate-box-shadow/) that explain how expensive is the animation of box-shadow and an alternative to achieve the same result 
+- the page have been laggy because of animation of rule [box-shadow], i read [this article](https://tobiasahlin.com/blog/how-to-animate-box-shadow/) that explain how expensive is the animation of box-shadow and an alternative to achieve the same result
+- error with Image component in next config [part of the solution](https://stackoverflow.com/questions/69735652/nextjs-image-component-complaining-that-the-host-is-not-added-to-config-but-it)
 
 ## guides applied
 

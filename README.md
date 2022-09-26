@@ -6,8 +6,6 @@ this is the develop of [this design](https://www.figma.com/proto/AOKSFKoqjC7DLsh
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 ## Errors Advice & other advices
 
 [failed to load swc binary](https://stackoverflow.com/questions/69816589/next-failed-to-load-swc-binary)
@@ -26,6 +24,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [for design tokens i use](https://www.smashingmagazine.com/2021/07/global-local-styling-nextjs/)
 
 ## todo
-
-- traducir aboutme y resto de texto
-- add react hook form

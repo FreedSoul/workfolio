@@ -4,7 +4,7 @@ import styles from '../styles/Aboutme.module.css'
 // import { AiOutlineLinkedin } from 'react-icons/ai'
 // import { FaFigma, FaGithubAlt } from 'react-icons/fa'
 // import { MdAlternateEmail } from 'react-icons/md'
-// import Card from '../components/card'
+// import Card from '../components/Card'
 
 export default function Trabajo() {
   return (

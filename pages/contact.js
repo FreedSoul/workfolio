@@ -1,5 +1,5 @@
 // import styles from '../styles/Home.module.css'
-import Formulario from '../components/formulario'
+import Formulario from '../components/Formulario'
 import styles from '../styles/Contact.module.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 // import { VscGithub } from 'react-icons/vsc'
@@ -7,7 +7,7 @@ import { FaFigma } from 'react-icons/fa'
 import { FaGithubAlt } from 'react-icons/fa'
 // import { IoLogoGoogleplus } from 'react-icons/io'
 import { MdAlternateEmail } from 'react-icons/md'
-// import Card from '../components/card'
+
 
 export default function Trabajo() {
   return (

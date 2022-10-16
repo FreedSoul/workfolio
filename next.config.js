@@ -10,6 +10,7 @@ const nextConfig = {
       'cdn.worldvectorlogo.com',
       'cdn-icons-png.flaticon.com',
       'miro.medium.com',
+      'testing-library.com',
     ],
   },
 }

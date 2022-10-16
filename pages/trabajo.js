@@ -1,6 +1,6 @@
 // import styles from '../styles/Home.module.css'
 import styles from '../styles/Trabajo.module.css'
-import Card from '../components/card'
+import Card from '../components/Card'
 
 export default function Trabajo() {
   const myWorkList = [
@@ -23,7 +23,7 @@ export default function Trabajo() {
       link: 'https://dianas-project.vercel.app/',
       bgstyle: {
         background:
-          'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
+          'linear-gradient(360deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
       },
     },
     {
@@ -34,20 +34,64 @@ export default function Trabajo() {
       link: 'freedsoul.github.io/todoapp/',
       bgstyle: {
         background:
-          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
+          'linear-gradient(to right, rgba(3, 0, 30, 0.6), rgba(115, 3, 192, 0.6), rgba(236, 56, 188, 0.4), rgba(253, 239, 249, 0.4))',
       },
     },
     {
-      title: 'snake game',
-      listTechs: ['javascript', 'node', 'css'],
-      image: '/snake-game-snap.PNG',
-      imageDescription: 'snake game',
-      link: 'https://github.com/FreedSoul/snake-game',
+      title: 'Clock 25 + 5',
+      listTechs: ['react', 'css'],
+      image: '/clock25.PNG',
+      imageDescription: 'clock25+5',
+      link: 'https://codepen.io/matt07/full/qBYydvQ',
       bgstyle: {
         background:
           'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%)',
       },
     },
+    {
+      title: 'Drum Machine',
+      listTechs: ['react', 'css'],
+      image: '/drummachine.PNG',
+      imageDescription: 'drum machine',
+      link: 'https://codepen.io/matt07/full/NWMyzXX',
+      bgstyle: {
+        background:
+          'linear-gradient(360deg, rgba(1, 216, 87, 0.4) 0%, rgba(255, 35, 233, 0.47) 100%)',
+      },
+    },
+    {
+      title: 'Calculator',
+      listTechs: ['react', 'css'],
+      image: '/calculator.PNG',
+      imageDescription: 'calculator',
+      link: 'https://codepen.io/matt07/full/WNJJNZg',
+      bgstyle: {
+        background:
+          'linear-gradient(to bottom, rgba(3, 0, 30, 0.6), rgba(115, 3, 192, 0.6), rgba(236, 56, 188, 0.4), rgba(253, 239, 249, 0.4))',
+      },
+    },
+    {
+      title: 'MarkDown Previewer',
+      listTechs: ['React', 'Css'],
+      image: '/markpreviewer.PNG',
+      imageDescription: 'MarkDown Previewer',
+      link: 'https://codepen.io/matt07/full/eYrVOMo',
+      bgstyle: {
+        background:
+          'linear-gradient(to top, rgba(3, 0, 30, 0.6), rgba(115, 3, 192, 0.6), rgba(236, 56, 188, 0.4), rgba(253, 239, 249, 0.4))',
+      },
+    },
+    {
+      title: 'snake game',
+      listTechs: ['javascript', 'css'],
+      image: '/snake-game-snap.PNG',
+      imageDescription: 'snake game',
+      link: 'https://github.com/FreedSoul/snake-game',
+      bgstyle: {
+        background:
+        'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
+      },
+    }
   ]
   return (
     <>
@@ -73,7 +117,7 @@ export default function Trabajo() {
         {/* <div className={styles['card-container1']}> */}
         {myWorkList.map((item) => (
           // <link key={item.title} href={"https://stackoverflow.com/"} passHref={true}>
-          <a key={item.title} href={item.link}>
+          <a key={item.title} href={item.link} rel="noopener noreferrer" target="_blank">
             <Card
               key={item.title}
               title={item.title}

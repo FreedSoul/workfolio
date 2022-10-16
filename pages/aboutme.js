@@ -169,7 +169,7 @@ export default function Trabajo() {
                 >
                   {' '}
                   <Image
-                    src="https://miro.medium.com/max/783/0*RfTXIdj0OMqSiDwC"
+                    src="https://testing-library.com/img/octopus-64x64.png"
                     alt="testing library"
                     width="40"
                     height="40"

@@ -1,6 +1,6 @@
 // import styles from '../styles/Home.module.css'
 import styles from '../styles/Trabajo.module.css'
-import Card from '../components/Card'
+import Card from '../components/card'
 
 export default function Trabajo() {
   const myWorkList = [

@@ -6,7 +6,7 @@ import { CgMenu } from 'react-icons/cg'
 import { CgClose } from 'react-icons/cg'
 // import { ImCancelCircle } from 'react-icons/im'
 
-const Header = () => {
+const Navbar = () => {
   const router = useRouter()
   const [openMenu, setOpenMenu] = useState(false)
 
@@ -91,4 +91,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar

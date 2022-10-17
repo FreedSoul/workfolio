@@ -31,7 +31,7 @@ export default function Trabajo() {
       listTechs: ['vite', 'vitest', 'tailwind'],
       image: '/todolist-snap.PNG',
       imageDescription: 'to do list',
-      link: 'freedsoul.github.io/todoapp/',
+      link: 'https://freedsoul.github.io/toDoApp/',
       bgstyle: {
         background:
           'linear-gradient(to right, rgba(3, 0, 30, 0.6), rgba(115, 3, 192, 0.6), rgba(236, 56, 188, 0.4), rgba(253, 239, 249, 0.4))',
@@ -86,7 +86,7 @@ export default function Trabajo() {
       listTechs: ['javascript', 'css'],
       image: '/snake-game-snap.PNG',
       imageDescription: 'snake game',
-      link: 'https://github.com/FreedSoul/snake-game',
+      link: 'https://freedsoul.github.io/snake-game/',
       bgstyle: {
         background:
         'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',

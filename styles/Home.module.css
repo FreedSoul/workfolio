@@ -80,16 +80,22 @@
   /* font-family: 'Permanent Marker', cursive; */
   font-size: 1rem;
   line-height: 1;
-  background-color: rgba(250, 235, 215, 1);
+  /* background-color: rgb(255, 255, 255); */
+  background: linear-gradient(
+    90deg,
+    rgb(234, 234, 234) 10%,
+    rgb(255, 255, 255) 100%
+  );
+  box-shadow: inset -1px -1px 8px rgb(0, 0, 0);
   position: relative;
   /* width: 30vw; */
   padding: 0px 20px;
   right: 50px;
   z-index: 1;
   border-radius: 70px;
-  border: 1px black solid;
+  /* border: 1px black solid; */
   align-self: flex-end;
-  filter: drop-shadow(10px 14px 40px rgb(255, 255, 255));
+  filter: drop-shadow(10px 14px 40px rgba(255, 255, 255, 0.919));
 }
 
 /* .container-matt {

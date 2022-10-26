@@ -17,18 +17,12 @@ export default function Trabajo() {
         <div className={styles.subarea}>
           <h1>hi i&lsquo;m matt</h1>
           since I was a child I have been in contact with technology, very early
-          I learned to operate a computer, when I was 12 already knew how to fix
-          them and Im always the person in the family called if they have a
-          problem with devices or technology, this curiosity led me to
-          investigate more and I discovered Linux systems, I never use them to
-          work but I have learned to use it as a hobby, all this led me to take
-          the computer systems career, for reasons of health had to leave it,
-          even though I had to move away from the university, my passion for
-          technology has always been intact, So I decided to learn how the web
+          I learned to operate a computer, in my family, guess who is called if they have a
+          problem with devices or technology. internet saved my life and the passion for technology always been there, So I decided to learn how the web
           works and here I am, discovering the vast world of the web that every
           day has something new to learn, I chose to learn front-end first but
           I&lsquo;ve also been learning the basics about databases and backend,
-          the technologies that i use, are:
+          the technologies that i use are:
           {/* espanol
           desde que era un nino he estado en contacto con la tecnologia, muy temprano aprendi a manejar
           un computador, cuando tenia 12 o por ahi, ya sabia como arreglarlos y siempre era la persona de la familia que
@@ -38,6 +32,9 @@ export default function Trabajo() {
           entonces decidi aprender como funcionaba la web y aqui estoy descubriendo el basto mundo de la web que todos los dias
           tiene algo nuevo para aprender, escogi primero aprender front-end pero tambien he estado aprendiendo lo basico sobre bases
         de datos y back-end */}
+        {/*ingles
+        since I was a child have been in contact with technology, very early I learned to operate a computer, in my family, guess who is called if they have a problem with devices or technology. internet saved my life and the passion for technology always been there, 
+So I decided to learn how the webn works and here I am, discovering the vast world of the web that every day has something new to learn, I chose to learn front-end first but I&lsquo;ve also been learning the basics about databases and backend, the technologies that i use, are:*/}
           {/* <div className={styles.networks}>
             <div className={styles['social-icons']}>
               <a

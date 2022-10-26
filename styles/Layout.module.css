@@ -17,16 +17,19 @@
   /* left: -200px; */
   width: 800px;
   height: 600px;
-  background: blue;
+  /* background: blue; */
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
   border-radius: 500px;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    #e5c72d 35.27%,
-    rgba(45, 229, 96, 0.98) 100%
-  );
+  /* background: linear-gradient(
+    90deg,
+    rgba(52, 37, 255, 0.498) 30%,
+    rgba(0, 186, 233, 0.418) 50%,
+    rgba(20, 3, 251, 0.522) 70%
+  ); */
+  background: linear-gradient(to right, #9b029b88, #00000000); 
+  /* ee9ca788 d4163088 9b021688 9b029b88*/
   /* box-shadow: 42px 40px 23px 34px rgba(0, 0, 0, 0.25); */
   /* box-shadow:
     inset 0 0 50px #fff,

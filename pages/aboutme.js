@@ -16,7 +16,7 @@ export default function Trabajo() {
       <div className={styles.area}>
         <div className={styles.subarea}>
           <h1>hi i&lsquo;m matt</h1>
-          since I was a child I have been in contact with technology, very early
+          since childhood I&lsquo;ve been in contact with technology, very early
           I learned to operate a computer, in my family, guess who is called if they have a
           problem with devices or technology. internet saved my life and the passion for technology always been there, So I decided to learn how the web
           works and here I am, discovering the vast world of the web that every

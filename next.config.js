@@ -15,4 +15,24 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+
+
+const withTM = require("next-transpile-modules")([
+  "three",
+  "react-three-fiber",
+  "drei",
+]);
+
+module.exports = withTM({...nextConfig,
+  //can add options as parameter
+  webpack(nextConfig) {
+    nextConfig.module.rules.push({
+      test: /\.(glb|gltf)$/,
+      use: {
+        loader: "file-loader",
+      },
+    });
+
+    return nextConfig;
+  }
+})

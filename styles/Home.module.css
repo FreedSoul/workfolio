@@ -98,6 +98,17 @@
   filter: drop-shadow(10px 14px 40px rgba(255, 255, 255, 0.919));
 }
 
+.horizon{
+  position: relative;
+  top:-20%;
+  justify-self: center;
+  grid-column: 1 / 10;
+  grid-row: 3/4;
+  width: 100vw;
+  height: 100vh;
+  z-index:1;
+}
+
 /* .container-matt {
   background-image: url('/public/mateo-sentado-sinfondo.png');
   z-index: 2;

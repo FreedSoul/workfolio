@@ -45,7 +45,7 @@ const Navbar = () => {
   const concat = (opcion) => '/' + opcion
 
   const OpcionesGeneradas = OpcionesMenu.map((opcion, id) => (
-    <li onClick={() => setOpenMenu(false)} key={id}><Link href={'/' + opcion}>{Selected(opcion)}</Link>
+    <li onClick={() => setOpenMenu(false)} key={id}><Link legacyBehavior href={'/' + opcion}>{Selected(opcion)}</Link>
     </li>
   ))
 

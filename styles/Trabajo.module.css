@@ -5,6 +5,7 @@
   grid-column: 1/span 10;
   grid-row: 1/2;
   align-items: center;
+  z-index: 99;
 }
 
 .page-title{

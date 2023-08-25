@@ -6,7 +6,7 @@ export default function Trabajo() {
   const myWorkList = [
     {
       title: 'Pokedex App',
-      listTechs: ['next', 'chakra-ui', 'react', 'framer-motion'],
+      listTechs: ['Next js', 'Chakra-ui', 'React', 'Framer-motion'],
       image: '/podekex-app-shot.png',
       imageDescription: 'Pokedex App',
       link: 'https://pkmn-react.vercel.app/',
@@ -16,25 +16,49 @@ export default function Trabajo() {
       },
     },
     {
-      title: 'static website',
-      listTechs: ['next', 'css', 'react', 'framer-motion'],
-      image: '/dianas-project-snap.PNG',
+      title: 'Infusion Tienda',
+      listTechs: ['Next js', 'Bootstrap', 'React', 'Next-Auth', 'SQL - Prisma'],
+      image: '/infusion-screenshot.png',
       imageDescription: 'static website',
       link: 'https://dianas-project.vercel.app/',
       bgstyle: {
         background:
-          'linear-gradient(360deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
+          // 'linear-gradient(360deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
+          'linear-gradient(180deg, rgba(35, 110, 255, 0.5) 30%, rgba(253, 239, 249, 0.5) 70%)',
       },
     },
     {
-      title: 'to do list',
-      listTechs: ['vite', 'vitest', 'tailwind'],
+      title: 'Country Academy',
+      listTechs: ['Next js', 'Tailwind', 'React - TypeScript', 'Redux'],
+      image: '/country-academy-screenshot.png',
+      imageDescription: 'Country Academy',
+      link: 'https://github.com/No-Country/s6-11-t-next',
+      bgstyle: {
+        background:
+          'linear-gradient(90deg, rgba(103, 0, 30, 0.6) 20%, rgba(253, 239, 249, 0.4) 90%)',
+      },
+    },
+    {
+      title: 'To Do List',
+      listTechs: ['Vite', 'Vitest', 'Tailwind'],
       image: '/todolist-snap.PNG',
       imageDescription: 'to do list',
       link: 'https://freedsoul.github.io/toDoApp/',
       bgstyle: {
         background:
           'linear-gradient(to right, rgba(3, 0, 30, 0.6), rgba(115, 3, 192, 0.6), rgba(236, 56, 188, 0.4), rgba(253, 239, 249, 0.4))',
+      },
+    },
+    {
+      title: 'Static Website',
+      listTechs: ['Next', 'Css', 'React', 'Framer-motion'],
+      image: '/dianas-project-snap.PNG',
+      imageDescription: 'static website',
+      link: 'https://dianas-project.vercel.app/',
+      bgstyle: {
+        background:
+          // 'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
+          'linear-gradient(180deg, rgba(17, 222, 255, 0.6039) 0%, rgba(245, 176, 0, 0.62) 69% )',
       },
     },
     {
@@ -89,9 +113,9 @@ export default function Trabajo() {
       link: 'https://freedsoul.github.io/snake-game/',
       bgstyle: {
         background:
-        'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.4) 0%, rgba(35, 176, 255, 0.62) 100%)',
       },
-    }
+    },
   ]
   return (
     <>
@@ -117,7 +141,12 @@ export default function Trabajo() {
         {/* <div className={styles['card-container1']}> */}
         {myWorkList.map((item) => (
           // <link key={item.title} href={"https://stackoverflow.com/"} passHref={true}>
-          <a key={item.title} href={item.link} rel="noopener noreferrer" target="_blank">
+          <a
+            key={item.title}
+            href={item.link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Card
               key={item.title}
               title={item.title}

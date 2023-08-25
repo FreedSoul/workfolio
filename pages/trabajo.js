@@ -20,11 +20,10 @@ export default function Trabajo() {
       listTechs: ['Next js', 'Bootstrap', 'React', 'Next-Auth', 'SQL - Prisma'],
       image: '/infusion-screenshot.png',
       imageDescription: 'static website',
-      link: 'https://dianas-project.vercel.app/',
+      link: 'https://infusion-prod.vercel.app/',
       bgstyle: {
         background:
-          // 'linear-gradient(360deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
-          'linear-gradient(180deg, rgba(35, 110, 255, 0.5) 30%, rgba(253, 239, 249, 0.5) 70%)',
+        'linear-gradient(180deg, rgba(1, 216, 87, 0.5) 0%, rgba(35, 176, 255, 0.55) 100%)',
       },
     },
     {

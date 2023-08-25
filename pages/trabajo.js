@@ -23,7 +23,7 @@ export default function Trabajo() {
       link: 'https://infusion-prod.vercel.app/',
       bgstyle: {
         background:
-        'linear-gradient(180deg, rgba(1, 216, 87, 0.5) 0%, rgba(35, 176, 255, 0.55) 100%)',
+          'linear-gradient(180deg, rgba(1, 216, 87, 0.5) 0%, rgba(35, 176, 255, 0.55) 100%)',
       },
     },
     {
@@ -62,7 +62,7 @@ export default function Trabajo() {
     },
     {
       title: 'Clock 25 + 5',
-      listTechs: ['react', 'css'],
+      listTechs: ['React', 'Css'],
       image: '/clock25.PNG',
       imageDescription: 'clock25+5',
       link: 'https://codepen.io/matt07/full/qBYydvQ',
@@ -73,7 +73,7 @@ export default function Trabajo() {
     },
     {
       title: 'Drum Machine',
-      listTechs: ['react', 'css'],
+      listTechs: ['React', 'Css'],
       image: '/drummachine.PNG',
       imageDescription: 'drum machine',
       link: 'https://codepen.io/matt07/full/NWMyzXX',
@@ -84,7 +84,7 @@ export default function Trabajo() {
     },
     {
       title: 'Calculator',
-      listTechs: ['react', 'css'],
+      listTechs: ['React', 'Css'],
       image: '/calculator.PNG',
       imageDescription: 'calculator',
       link: 'https://codepen.io/matt07/full/WNJJNZg',
@@ -106,7 +106,7 @@ export default function Trabajo() {
     },
     {
       title: 'snake game',
-      listTechs: ['javascript', 'css'],
+      listTechs: ['Javascript', 'Css', 'Canvas API'],
       image: '/snake-game-snap.PNG',
       imageDescription: 'snake game',
       link: 'https://freedsoul.github.io/snake-game/',

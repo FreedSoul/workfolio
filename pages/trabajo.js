@@ -56,7 +56,6 @@ export default function Trabajo() {
       link: 'https://dianas-project.vercel.app/',
       bgstyle: {
         background:
-          // 'linear-gradient(180deg, rgba(35, 176, 255, 0.62) 0%, rgba(0, 243, 170, 0.6039) 100%)',
           'linear-gradient(180deg, rgba(17, 222, 255, 0.6039) 0%, rgba(245, 176, 0, 0.62) 69% )',
       },
     },

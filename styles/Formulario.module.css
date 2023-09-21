@@ -113,6 +113,7 @@
   margin: 25px auto;
   min-width: 150px;
   /* padding: 10px; */
+  cursor:pointer;
   border-radius: 2px;
   border: none;
   color: white;

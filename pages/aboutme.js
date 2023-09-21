@@ -16,13 +16,17 @@ export default function Trabajo() {
       <div className={styles.area}>
         <div className={styles.subarea}>
           <h1>hi i&lsquo;m matt</h1>
-          since childhood I&lsquo;ve been in contact with technology, very early
-          I learned to operate a computer, in my family, guess who is called if they have a
-          problem with devices or technology. internet saved my life and the passion for technology always been there, So I decided to learn how the web
-          works and here I am, discovering the vast world of the web that every
-          day has something new to learn, I chose to learn front-end first but
-          I&lsquo;ve also been learning the basics about databases and backend,
-          the technologies that i use are:
+          From a young age, technology has been a constant companion in my life.
+          My journey began with learning to navigate a computer well before it
+          became a household norm. When it comes to tech glitches and issues
+          within my family, I&apos;m the go-to troubleshooter. The internet has been
+          nothing short of a lifesaver for me, fueling an ever-present passion
+          for technology. Driven by this zeal, I delved into understanding the
+          intricacies of the web. Every day is a new learning experience in this
+          expansive digital universe. I initially focused on mastering front-end
+          development but have also been getting my feet wet in database
+          management and back-end technologies. Technologies I
+          specialize in include:
           {/* espanol
           desde que era un nino he estado en contacto con la tecnologia, muy temprano aprendi a manejar
           un computador, cuando tenia 12 o por ahi, ya sabia como arreglarlos y siempre era la persona de la familia que
@@ -32,7 +36,7 @@ export default function Trabajo() {
           entonces decidi aprender como funcionaba la web y aqui estoy descubriendo el basto mundo de la web que todos los dias
           tiene algo nuevo para aprender, escogi primero aprender front-end pero tambien he estado aprendiendo lo basico sobre bases
         de datos y back-end */}
-        {/*ingles
+          {/*ingles
         since I was a child have been in contact with technology, very early I learned to operate a computer, in my family, guess who is called if they have a problem with devices or technology. internet saved my life and the passion for technology always been there, 
 So I decided to learn how the webn works and here I am, discovering the vast world of the web that every day has something new to learn, I chose to learn front-end first but I&lsquo;ve also been learning the basics about databases and backend, the technologies that i use, are:*/}
           {/* <div className={styles.networks}>
@@ -252,8 +256,17 @@ So I decided to learn how the webn works and here I am, discovering the vast wor
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
                 alt="mongodb"
-                width="40"
-                height="40"
+                width="80"
+                height="80"
+              />{' '}
+            </a>{' '}
+            <a href="https://www.prisma.io/" target="_blank" rel="noreferrer">
+              {' '}
+              <Image
+                src="https://prismalens.vercel.app/header/logo-dark.svg"
+                alt="prisma"
+                width="80"
+                height="80"
               />{' '}
             </a>{' '}
             <a href="https://nodejs.org" target="_blank" rel="noreferrer">
@@ -261,8 +274,8 @@ So I decided to learn how the webn works and here I am, discovering the vast wor
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                 alt="nodejs"
-                width="40"
-                height="40"
+                width="80"
+                height="80"
               />{' '}
             </a>{' '}
           </div>

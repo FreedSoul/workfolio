@@ -88,9 +88,9 @@ const Formulario = () => {
               ' ' +
               (errors.confirm ? styles.alert : '')
             }
-            placeholder="ejemplo@tucorreo.com"
+            placeholder="example@yourEmail.com"
             name="email"
-          />
+            />
           <div className={styles.subtitle}>Confirm Email</div>
           {errors.confirm && (
             <div role={'alert'} className={styles.alertdiv}>
@@ -110,7 +110,7 @@ const Formulario = () => {
               ' ' +
               (errors.confirm ? styles.alert : '')
             }
-            placeholder="ejemplo@tucorreo.com"
+            placeholder="example@yourEmail.com"
             // name="confirm"
           />
           <div className={styles.subtitle}>Name</div>
@@ -125,7 +125,7 @@ const Formulario = () => {
             id="nombre"
             type="text"
             className={styles['name'] + ' ' + styles['formEntry']}
-            placeholder="Nombre"
+            placeholder="Name"
             name="name"
           />
           <div className={styles.subtitle}>Phone</div>
@@ -144,13 +144,13 @@ const Formulario = () => {
             {...register('message')}
             id="mesagge"
             className={styles['message'] + ' ' + styles['formEntry']}
-            placeholder="Escribenos tu Mensaje Aqui"
+            placeholder="Write your message here"
             name="message"
           ></textarea>
           <br />
           {/* <input id="mensaje" type="checkbox" className={styles.termsConditions} value="Term"/> */}
           {/* <label  htmlFor="terms"> I Accept the</label> */}
-          <button className={styles['submit']} type="submit">
+          <button className={styles['submit']} type="submit" >
             Submit
           </button>
         </form>

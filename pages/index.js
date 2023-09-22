@@ -2,7 +2,7 @@
 import styles from '../styles/Home.module.css'
 // import Navbar from '../components/navbar'
 import { Canvas } from '@react-three/fiber'
-import Model from '../components/sceneHorizon1.js'
+import Model from '../components/sceneHorizon.js'
 
 export default function Home() {
   return (

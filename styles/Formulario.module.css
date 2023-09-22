@@ -3,8 +3,8 @@
   /*width: 600px;
     height: 600px; */
   box-shadow: inset 0 0 20px #fff, inset 10px 0 20px #f0f,
-  inset -10px 0 20px #0ff, inset 10px 0 20px #f0f, inset -5px 0 5px #0ff,
-  0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
+    inset -10px 0 20px #0ff, inset 10px 0 20px #f0f, inset -5px 0 5px #0ff,
+    0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
   border-radius: 15px;
   /* min-width:300px; */
 }
@@ -51,20 +51,20 @@
 }
 
 .name {
-  background-color:rgba(81, 4, 215, 0.57);
+  background-color: rgba(81, 4, 215, 0.57);
   color: white;
   font-family: 'Edu QLD Beginner', cursive;
 }
 
 .name:hover {
-    /* border-bottom: 5px solid #0e3721; */
+  /* border-bottom: 5px solid #0e3721; */
   height: 40px;
   width: 97%;
   transition: ease 0.5s;
 }
 
 .email {
-  background-color:rgba(81, 4, 215, 0.57);
+  background-color: rgba(81, 4, 215, 0.57);
   color: white;
   height: 2em;
 }
@@ -77,7 +77,7 @@
 } */
 
 .message {
-  background-color:rgba(81, 4, 215, 0.57);
+  background-color: rgba(81, 4, 215, 0.57);
   color: white;
   height: 6rem !important;
   width: 30vw;
@@ -113,13 +113,41 @@
   margin: 25px auto;
   min-width: 150px;
   /* padding: 10px; */
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 2px;
   border: none;
   color: white;
   background-color: #26fc5197;
-  box-shadow:0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
+  box-shadow: 0 0 10px #fff, -5px 0 30px #f0f, 8px 0 30px #0ff;
   font-size: 20px;
+  /* transition: ease 0.5s; */
+  
+}
+.submit:hover {
+  -webkit-animation: submit 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* animation: submit 0.45s linear(0.5, 0.70) both; */
+  animation: submit 0.25s linear 0.25s infinite;
+}
+
+@-webkit-keyframes submit {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+@keyframes submit {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
 }
 
 /* .submit:hover {
@@ -148,12 +176,12 @@
   color: rgb(255, 255, 255);
 }
 
-.alert{
+.alert {
   box-shadow: none;
   outline: rgb(239, 11, 11) double 3px;
   outline-offset: 0.08em;
 }
-.alertdiv{
+.alertdiv {
   box-shadow: black;
   outline: rgb(239, 11, 11) double 3px;
   font-family: 'Permanent Marker', cursive;
@@ -161,10 +189,9 @@
 }
 
 @media (max-width: 600px) {
-
   .wrapper {
-  margin-top:100px;
-}
+    margin-top: 100px;
+  }
 
   .formEntry {
     /* position: absolute; */

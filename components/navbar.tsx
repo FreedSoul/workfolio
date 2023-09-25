@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { CgMenu } from 'react-icons/cg'
 import { CgClose } from 'react-icons/cg'
+
 // import { ImCancelCircle } from 'react-icons/im'
 
-const Navbar = () => {
+const Navbar:React.FC = () => {
   const router = useRouter()
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState<boolean>(false)
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     if (!openMenu) {
       setOpenMenu(true)
     }

@@ -1,12 +1,13 @@
 // import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import styles from '../styles/Aboutme.module.css'
+import React from 'react'
 // import { AiOutlineLinkedin } from 'react-icons/ai'
 // import { FaFigma, FaGithubAlt } from 'react-icons/fa'
 // import { MdAlternateEmail } from 'react-icons/md'
 // import Card from '../components/card'
 
-export default function Trabajo() {
+const About: React.FC  = () => {
   return (
     <>
       <div className={styles['page-container']}>
@@ -19,13 +20,13 @@ export default function Trabajo() {
           From a young age, technology has been a constant companion in my life.
           My journey began with learning to navigate a computer well before it
           became a household norm. When it comes to tech glitches and issues
-          within my family, I&apos;m the go-to troubleshooter. The internet has been
-          nothing short of a lifesaver for me, fueling an ever-present passion
-          for technology. Driven by this zeal, I delved into understanding the
-          intricacies of the web. Every day is a new learning experience in this
-          expansive digital universe. I initially focused on mastering front-end
-          development but have also been getting my feet wet in database
-          management and back-end technologies. Technologies I
+          within my family, I&apos;m the go-to troubleshooter. The internet has
+          been nothing short of a lifesaver for me, fueling an ever-present
+          passion for technology. Driven by this zeal, I delved into
+          understanding the intricacies of the web. Every day is a new learning
+          experience in this expansive digital universe. I initially focused on
+          mastering front-end development but have also been getting my feet wet
+          in database management and back-end technologies. Technologies I
           specialize in include:
           {/* espanol
           desde que era un nino he estado en contacto con la tecnologia, muy temprano aprendi a manejar
@@ -104,7 +105,7 @@ So I decided to learn how the webn works and here I am, discovering the vast wor
             </div>
             <div>
               <h2>Front-end</h2>
-              <p align="left">
+              <p >
                 {' '}
                 <a
                   href="https://www.w3schools.com/css/"
@@ -285,3 +286,4 @@ So I decided to learn how the webn works and here I am, discovering the vast wor
     </>
   )
 }
+export default About

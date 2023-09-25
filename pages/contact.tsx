@@ -1,4 +1,5 @@
 // import styles from '../styles/Home.module.css'
+import React from 'react'
 import Formulario from '../components/formulario'
 import styles from '../styles/Contact.module.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
@@ -9,7 +10,7 @@ import { FaGithubAlt } from 'react-icons/fa'
 import { MdAlternateEmail } from 'react-icons/md'
 // import Card from '../components/card'
 
-export default function Trabajo() {
+const Contacto: React.FC = () => {
   return (
     <>
       <div className={styles['page-container']}>
@@ -61,3 +62,5 @@ export default function Trabajo() {
     </>
   )
 }
+
+export default Contacto

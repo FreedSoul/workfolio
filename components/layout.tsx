@@ -1,7 +1,12 @@
 import Navbar from './navbar'
 import styles from '../styles/Layout.module.css'
+import React from 'react'
 
-export default function Layout({ children }) {
+interface LayoutsProps {
+  children: React.ReactNode; 
+}
+
+ const Layout:React.FC<LayoutsProps> = ({ children }) => {
   return (
     <>
       <main className={styles.main}>
@@ -23,3 +28,5 @@ export default function Layout({ children }) {
     </>
   )
 }
+
+export default Layout 

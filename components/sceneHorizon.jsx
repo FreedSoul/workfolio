@@ -6,6 +6,8 @@ Command: npx gltfjsx@6.1.1 sceneHorizon.gltf --transform
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, PerspectiveCamera, useAnimations } from '@react-three/drei'
 
+
+
 export default function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF(

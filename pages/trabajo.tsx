@@ -2,7 +2,7 @@
 import styles from '../styles/Trabajo.module.css'
 import Card from '../components/card'
 
-type CardContent = {
+export type CardContent = {
   title: string
   listTechs: Array<string>
   image: string
@@ -14,7 +14,7 @@ type CardContent = {
 }
 
 export default function Trabajo() {
-  const myWorkList: Array<CardContent> = [
+  const myWorkList: CardContent[] = [
     {
       title: 'Pokedex App',
       listTechs: ['Next js', 'Chakra-ui', 'React', 'Framer-motion'],

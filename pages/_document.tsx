@@ -1,7 +1,8 @@
 // /* eslint-disable @next/next/no-css-tags */
 import { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
 
-export default function Document() {
+const Document: React.FC = () => {
   return (
     <Html>
       <Head>
@@ -29,3 +30,4 @@ export default function Document() {
     </Html>
   )
 }
+export default Document

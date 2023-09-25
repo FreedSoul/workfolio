@@ -1,9 +1,12 @@
 // import Image from 'next/image'
+import { FC } from 'react'
 import styles from '../styles/Card.module.css'
 import Image from 'next/image'
+import { CardContent } from '../pages/trabajo'
 // import Navbar from '../components/navbar'
 
 type CardProps = {
+  children: CardContent
   key: string
   title: string
   image: string
@@ -12,7 +15,7 @@ type CardProps = {
   bgstyle: object
 }
 
-export default function Card(props:CardProps) {
+ const Card:FC<CardProps> = (props) => {
   return (
     <div className={styles.card} style={props.bgstyle}>
       <div
@@ -60,3 +63,5 @@ export default function Card(props:CardProps) {
     </div>
   )
 }
+
+export default Card;

@@ -3,7 +3,16 @@ import styles from '../styles/Card.module.css'
 import Image from 'next/image'
 // import Navbar from '../components/navbar'
 
-export default function Card(props) {
+type CardProps = {
+  key: string
+  title: string
+  image: string
+  alt: string
+  list: string[]
+  bgstyle: object
+}
+
+export default function Card(props:CardProps) {
   return (
     <div className={styles.card} style={props.bgstyle}>
       <div

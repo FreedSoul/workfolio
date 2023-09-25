@@ -6,7 +6,7 @@ import styles from '../styles/Aboutme.module.css'
 // import { MdAlternateEmail } from 'react-icons/md'
 // import Card from '../components/card'
 
-export default function Trabajo() {
+export default function About() {
   return (
     <>
       <div className={styles['page-container']}>

@@ -9,7 +9,7 @@ import { FaGithubAlt } from 'react-icons/fa'
 import { MdAlternateEmail } from 'react-icons/md'
 // import Card from '../components/card'
 
-export default function Trabajo() {
+export default function Contacto() {
   return (
     <>
       <div className={styles['page-container']}>
